@@ -1,0 +1,23 @@
+Step 1: Algorithm/Pseudocode
+   ValidParenthesis(s)
+   1 stack = Stack()
+   2 for i = 0 to s.length
+   3     if s[i] in ['{', '[', '(']
+   4        stack.push(s[i])
+   5    else
+   6        if closeChar(stack.pop()) != s[i]
+   7            return false
+   8 return stack.isEmpty()
+   
+Step 2: Node implementation
+   Node.java
+   
+Step 3: Linked List implementation
+   DoubleLinkedList.java
+   Note: Used DLL instead of SLL for ease in deletion
+
+Step 4: Stack implementation
+   Stack.java
+
+Step 5: Testing
+   ValidParenthesis.java
